@@ -1,0 +1,140 @@
+######################## default configuration ####################
+baseURL = "https://ginshiki.com/"
+languageCode = "en-us"
+title = "Ginshikin Rayuwa"
+theme = "tubali"
+summaryLength = "10"
+paginate = 6
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+
+############################# Plugins ##############################
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  URL = "plugins/slick/slick.css"
+  [[params.plugins.css]]
+  URL = "plugins/themify-icons/themify-icons.css"
+  [[params.plugins.css]]
+  URL = "plugins/venobox/venobox.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/slick/slick.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/venobox/venobox.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/fuse.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/mark.js"
+  [[params.plugins.js]]
+  URL = "plugins/search/search.js"
+
+
+
+############################## navigation ###############################
+[menu]
+
+  # main menu
+  [[menu.main]]
+  name = "Kimiyya da Fasaha"
+  URL = "./categories/kimiyya-da-fasaha/"
+  weight = 1
+
+  [[menu.main]]
+  name = "Sana'o'i"
+  URL = "./categories/sanaa/"
+  weight = 2
+
+  [[menu.main]]
+  name = "Damarmaki"
+  URL = "./categories/damarmaki/"
+  weight = 3
+
+  [[menu.main]]
+  name = "Kiwon Lafiya"
+  URL = "./categories/kiwon-lafiya/"
+  weight = 4
+
+  [[menu.main]]
+  name = "Tsimi da Tattali"
+  URL = "./categories/tattali/"
+  weight = 5
+
+  [[menu.main]]
+  name = "Iyali"
+  URL = "./categories/iyali/"
+  weight = 6
+
+  # footer menu
+  [[menu.footer]]
+  name = "Game da Mu"
+  URL = "./game-da-mu/"
+  weight = 1
+
+  [[menu.footer]]
+  name = "Domin Marubuta"
+  URL = "./marubuta/"
+  weight = 2
+
+  [[menu.footer]]
+  name = "Ka'idojin Amfani"
+  URL = "./amfani/"
+  weight = 3
+
+
+#################### default parameters ################################
+[params]
+logo = "images/logo.png"
+home = "Home"
+# Meta data
+description = "Ilimi domin ci gaban al'umma"
+author = "admin"
+# Google Analitycs
+googleAnalytics = "UA-180488591-1"
+# Contact Information
+email = "info@ginshiki.com"
+location = "Kano, Nigeria"
+# Hakkin Mallaka
+copyright = "| Mallakin &copy; 2020 [klymb Digital Media](https://klymbdigital.com) Duka hakkoki namu ne |"
+
+  # Preloader
+  [params.preloader]
+  enable = true
+  preloader = "images/favicon.png" # use .png , .svg or .gif format
+
+  # search
+  [params.search]
+  enable = true
+
+############################ news letter ########################
+
+
+############################# social site ########################
+[[params.social]]
+title = "facebook"
+icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
+link = "https://facebook.com/ginshiki"
+
+[[params.social]]
+title = "twitter"
+icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
+link = "https://twitter.com/ginshiki"
+
+[[params.social]]
+title = "instagram"
+icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
+link = "https://instagram.com/ginshiki"
+
+
+
+

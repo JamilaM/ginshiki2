@@ -1,0 +1,75 @@
+/*  typography */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap');
+
+body {
+  line-height: 1.2;
+  font-family: $primary-font;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  color: $text-color;
+}
+
+p, .paragraph {
+  font-weight: 400;
+  color: $text-color;
+  font-size: 18px;
+  line-height: 1.9;
+  font-family: $primary-font;
+}
+
+
+.widget p, .widget ul li a {
+  color: $black;
+  border-radius: 5px;
+}
+
+.widget-title {
+  color: $black;
+}
+
+.widget .btn-outline-primary{
+  color: $black;
+  border: 1px solid $primary-color;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $text-color-dark;
+  font-family: $primary-font;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+a{
+  &.h1,&.h2,&.h3,&.h4,&.h5,&.h6{
+    color: $text-color-dark;
+    font-weight: 700;
+  }
+}
+
+h1, .h1{
+  font-size: 50px;
+}
+
+h2, .h2{
+  font-size: 40px;
+}
+
+h3, .h3{
+  font-size: 32px;
+}
+
+h4, .h4{
+  font-size: 28px;
+}
+
+h5, .h5{
+  font-size: 25px;
+}
+
+h6, .h6{
+  font-size: 20px;
+}
+
+hr {
+  background-color: $primary-color;
+}

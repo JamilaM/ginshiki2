@@ -1,0 +1,101 @@
+{{ if .Site.Params.newsletter.enable }}
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2>{{ .Site.Params.newsletter.title | markdownify }}</h2>
+        <p class="text-light px-md-5 py-4 border-left border-right border-primary">
+          {{ .Site.Params.newsletter.content | markdownify }}</p>
+        <form action="#" class="row justify-content-center">
+          <div class="input-group col-md-8">
+            <input type="text" class="form-control rounded-left" placeholder="Sanya adireshin Imel">
+            <div class="input-group-append">
+              <button class="input-group-text btn btn-primary rounded-right">Shiga</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-2">
+        <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"></a>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="widget">
+          <h6 class="widget-title">Binciki Shafin</h6>
+          <form action="{{ .Site.BaseURL }}/search" class="form-inline my-3 justify-content-center">
+            <input class="form-control rounded" id="search-query" name="s" type="search" placeholder="Binciki shafin" aria-label="Search">
+          </form>
+          <div class="my-3">
+            {{ partial "share-buttons.html" . }}
+          </div>
+          </div>
+      </div>
+      <div class="col-lg-2 col-sm-6 mb-2">
+        <div class="widget">
+          <h6 class="widget-title">Rukunoni</h6>
+          {{- if isset .Site.Taxonomies "categories" }}
+          {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
+          <ul class="list-unstyled">
+            {{- range $name, $items := .Site.Taxonomies.categories }}
+            <li><a
+                href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a>
+            </li>
+            {{- end }}
+          </ul>
+          {{- end }}
+          {{- end }}
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 mb-2">
+        <div class="widget">
+          <h6 class="widget-title">Shafukan amfani</h6>
+          <ul class="list-unstyled">
+            {{ range .Site.Menus.footer }}
+            <li class="m-3"><a class="text-dark" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+         
+        </div>
+      </div>
+
+      
+      <div class="col-lg-3 col-sm-6 mb-2">
+        <div class="widget">
+          <h6 class="widget-title">Shafukan Zumunta</h6>
+          <ul class="list-inline social-links">
+            {{ range .Site.Params.social }}
+            <li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      
+      
+      <div class="col-12 border-top py-4 text-center">
+        {{ .Site.Params.copyright | markdownify }}
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = {{ "index.json" | absURL }}
+</script>
+
+{{ "<!-- JS Plugins -->" | safeHTML }}
+{{ range .Site.Params.plugins.js}}
+<script src="{{ .URL | absURL }}"></script>
+{{ end }}
+{{ "<!-- Main Script -->" | safeHTML }}
+{{ $script := resources.Get "js/script.js" | minify}}
+<script src="{{ $script.Permalink }}"></script>
+
+
