@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://ginshiki.com/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Ginshikin Rayuwa"
 theme = "tubali"
