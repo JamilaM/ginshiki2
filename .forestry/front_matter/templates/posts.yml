@@ -27,4 +27,5 @@ fields:
   name: type
   label: type
 pages:
+- content/Sample-1.md
 - content/Sample.md
