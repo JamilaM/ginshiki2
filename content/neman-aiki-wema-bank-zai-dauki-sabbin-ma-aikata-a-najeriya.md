@@ -3,7 +3,6 @@ Author = "Muhammadu Sabiu "
 categories = ["Damarmaki "]
 date = 2023-01-17T19:40:00Z
 description = "Daukar Ma'aikata a Wema Bank"
-draft = true
 image = "/uploads/download-8.png"
 tags = ["Wema Bank,Kano,Lagos"]
 title = "Neman Aiki: Wema Bank Zai Dauki Sabbin Ma'aikata a Najeriya"
