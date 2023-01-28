@@ -3,7 +3,6 @@ Author = "Muhammadu Sabiu "
 categories = ["", ""]
 date = 2023-01-01T21:35:00Z
 description = "Saboda kauce wa ƴan damfara ta waya"
-draft = true
 image = "/uploads/images-63.jpeg"
 tags = [""]
 title = "Ƴan damfara sun yi yawa yanzu—ku kiyaye asusun bankinku"
