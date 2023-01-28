@@ -3,7 +3,6 @@ Author = "Muhammadu Sabiu "
 categories = []
 date = 2023-01-01T21:30:00Z
 description = "Neman tallafin karatu"
-draft = true
 image = "/uploads/download-91.jpeg"
 tags = []
 title = "Tallafin Karatun Digiri na Farko Mai Tsoka"
