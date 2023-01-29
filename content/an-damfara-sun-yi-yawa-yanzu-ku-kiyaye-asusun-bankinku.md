@@ -1,6 +1,6 @@
 +++
 Author = "Muhammadu Sabiu "
-categories = ["", ""]
+categories = ["Sana'o'i", "", ""]
 date = 2023-01-29T07:05:00Z
 description = "Saboda kauce wa ƴan damfara ta waya"
 image = "/uploads/images-63.jpeg"
