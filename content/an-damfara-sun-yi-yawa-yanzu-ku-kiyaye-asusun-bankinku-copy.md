@@ -3,7 +3,6 @@ Author = "Muhammadu Sabiu "
 categories = ["Tsimi da Tattali", "Sana'o'i", "", ""]
 date = 2023-01-29T07:05:00Z
 description = "Saboda kauce wa ƴan damfara ta waya"
-draft = true
 image = "/uploads/images-63.jpeg"
 tags = [""]
 title = "Ƴan damfara sun yi yawa yanzu—ku kiyaye asusun bankinku-(copy)"
