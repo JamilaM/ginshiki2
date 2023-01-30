@@ -1,7 +1,7 @@
 +++
 Author = "Muhammadu Sabiu "
 categories = ["Damarmaki", "", ""]
-date = 2023-01-29T07:05:00Z
+date = 2023-01-30T10:42:00Z
 description = "Saboda kauce wa ƴan damfara ta waya"
 image = "/uploads/images-63.jpeg"
 tags = [""]
