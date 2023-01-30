@@ -1,6 +1,6 @@
 +++
 Author = "Muhammadu Sabiu "
-categories = ["Tsimi da Tattali", "Sana'o'i", "", ""]
+categories = ["Damarmaki", "", ""]
 date = 2023-01-29T07:05:00Z
 description = "Saboda kauce wa ƴan damfara ta waya"
 image = "/uploads/images-63.jpeg"
